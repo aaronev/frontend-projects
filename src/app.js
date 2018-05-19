@@ -13,11 +13,13 @@ app.get('/', (req, res, next) => {
   res.send('index.html')
 })
 
-app.get('/test', (req, res, next) => {
-  request('https://raw.githubusercontent.com/aaronev/apple.com-replica/master/index.html', (err, resp, bod) => {
-    res.send(bod)
-  })
-})
+//Test route not working trying to see if I could take the html from a website and into my webiste
+
+// app.get('/test', (req, res, next) => {
+//   request('https://raw.githubusercontent.com/aaronev/apple.com-replica/master/index.html', (err, resp, bod) => {
+//     res.send(bod)
+//   })
+// })
 
 app.use((req, res) => {
   res.send('404 NOT FOUND')
