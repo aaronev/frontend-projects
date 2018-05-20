@@ -21,6 +21,12 @@ app.get('/', (req, res, next) => {
 //   })
 // })
 
+// add othe routes if needed 
+
+app.get ('/about', (req, res, next) => {
+  // req.send('about.html')
+})
+
 app.use((req, res) => {
   res.send('404 NOT FOUND')
 })
